@@ -4,10 +4,11 @@ import dev.niceleader.gym_buddy_connect.dto.ClubDto;
 import dev.niceleader.gym_buddy_connect.logic.service.ClubService;
 import dev.niceleader.gym_buddy_connect.model.Club;
 import dev.niceleader.gym_buddy_connect.repository.ClubRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service
 public class ClubServiceImpl implements ClubService {
     private final ClubRepository clubRepository;
 
